@@ -8,3 +8,62 @@ QA automated testing evaluation project using Cypress.io
 - Run `nvm use` command
 - Run `npm i` command
 - Run `npm run cypress` command
+
+### The First Scenario
+
+- Open the browser
+- Visit https://demoqa.com/autocomplete/
+- Find that page's entry title
+- Make sure the text is "Autocomplete"
+
+# Basic Scenarios to Automate
+
+## Home Tab
+
+## Interactions Tab
+
+## Widgets Tab
+
+## Header and Footer
+
+# Interaction Scenarios to Automate
+
+## Sortable
+
+## Selectable
+
+## Resizable
+
+## Droppable
+
+## Draggable
+
+# Widget Scenarios to Automate
+
+## Tooltip
+
+## Tabs
+
+## Spinner
+
+## Slider
+
+## Selectmenu
+
+## Progressbar
+
+## Menu
+
+## Dialog
+
+## Datepicker
+
+## Controlgroup
+
+## Checkboxradio
+
+## Button
+
+## Autocomplete
+
+## Accordion
