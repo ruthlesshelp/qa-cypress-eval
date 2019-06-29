@@ -20,8 +20,8 @@ describe('Interactions tab', () => {
 				// Check one of the known 'Interactions' list component
 				cy.get('#content .demo-frame li').eq(1)
 				  .should('contain', 'Selectable').should('be.visible')
-			})
-		})
+			});
+		});
 	});
 
 	afterEach(() => {
@@ -49,7 +49,6 @@ describe('Interactions tab', () => {
 				cy.get('#selectable li').eq(4).should('not.have.class', 'ui-selected')
 				// Whereas 'Item 3' should be selected
 				cy.get('#selectable li').eq(2).should('have.class', 'ui-selected')
-
 			});
 
 			it('Select the same item, and item remain selected', () => {
@@ -58,7 +57,6 @@ describe('Interactions tab', () => {
 				cy.get('#selectable li').eq(2).click()
 				// 'Item 3' should remain selected unless unselection feature is implemented
 				cy.get('#selectable li').eq(2).should('have.class', 'ui-selected')
-
 			});
 		});
 
@@ -71,8 +69,8 @@ describe('Interactions tab', () => {
 					cy.get('#menu-top .menu-item').eq(1).click()
 					cy.get('#content .demo-frame li a').eq(4).click()
 						  .should('contain', 'Draggable').should('be.visible')
-					})
-				})
+					});
+				});
 
 			it('Drag the element', () => {
 				// Drag the element
@@ -84,12 +82,6 @@ describe('Interactions tab', () => {
 				// After the movement, the X-cordinate should be +60px, and Y-cordinate should be -80px
 				cy.get('#draggable').should('have.attr', 'style', 'position: relative; left: 60px; top: -80px;');
 			});
-
 		});
-
 	});
-
 });
-
-
-

@@ -20,8 +20,8 @@ describe('Tooltip and Double click tab', () => {
 				// Check one of the known 'Tooltip and Double click' list component
 				cy.get('#content .demo-frame #doubleClickBtn')
 				  .should('contain', 'Hello, Double-click me').should('be.visible')
-			})
-		})
+			});
+		});
 	});
 
 	afterEach(() => {
@@ -40,7 +40,6 @@ describe('Tooltip and Double click tab', () => {
 
 				// To Do
 				// Click on OK button to dismiss the alert
-
 			})
 		});
 
@@ -59,9 +58,8 @@ describe('Tooltip and Double click tab', () => {
 			cy.get('#rightClickBtn').trigger('contextmenu')
 			cy.get('.contextMenuItem').eq(2).click().then(() => {
 				cy.get('@alert').should('have.been.calledWith','You have selected Tag')
-			})
-
-		})
+			});
+		});
 
 		// This test does not work currently due to the cy.hover() is not supported
 		// All workarounds online seem not working so far
@@ -74,10 +72,9 @@ describe('Tooltip and Double click tab', () => {
 			// cy.get('.tooltip').invoke('show').click().then(() => {
 			cy.get('.tooltip').trigger('mouseover').then(() => {
 				cy.get('.tooltiptext').should('be.visible')
-			})
-		})
+			});
+		});
 	});
-
 });
 
 

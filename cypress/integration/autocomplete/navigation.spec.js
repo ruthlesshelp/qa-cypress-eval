@@ -14,7 +14,7 @@ describe('Tabs and Navigation', () => {
 			// Check the side bar titles are correct
 			cy.get('#sidebar').should('contain','Interactions')
 			cy.get('#sidebar').should('contain','Widgets')
-		})
+		});
 	});
 
 	afterEach(() => {
@@ -32,7 +32,7 @@ describe('Tabs and Navigation', () => {
 
 				cy.get('.entry-title')
 				  .should('be.visible')
-			})
+			});
 		});
 
 		it('Access Widgets Tab and expect Widgets title and list displayed', () => {
@@ -54,7 +54,7 @@ describe('Tabs and Navigation', () => {
 				// Check the count of Widgets list components
 				cy.get('#content .demo-frame li')
 				  .should('have.length', 15)
-			})
+			});
 		});
 
 		it('Access Interactions Tab and expect Interactions title and list displayed', () => {
@@ -75,8 +75,7 @@ describe('Tabs and Navigation', () => {
 				// Check the count of Interactions list components
 				cy.get('#content .demo-frame li')
 				  .should('have.length', 5)
-
-			})
+			});
 		});
 	});
 
@@ -91,7 +90,7 @@ describe('Tabs and Navigation', () => {
 
 				cy.get('.entry-title')
 				  .should('be.visible')
-			})
+			});
 		});
 
 		it('Access Widgets Tab from the Sidebar', () => {
@@ -104,7 +103,7 @@ describe('Tabs and Navigation', () => {
 
 				cy.get('.entry-title')
 				  .should('be.visible')
-			})
+			});
 		});
 	});
-})
+});
