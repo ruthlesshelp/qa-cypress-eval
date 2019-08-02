@@ -1,3 +1,5 @@
+This project includes automated tests cretion for the website https://demoqa.com
+
 # QA Cypress Evaluation
 QA automated testing project using Cypress.io
 
