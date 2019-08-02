@@ -1,20 +1,14 @@
 # QA Cypress Evaluation
-QA automated testing evaluation project using Cypress.io
+QA automated testing project using Cypress.io
 
 ### How do I use this repo?
 
-- Clone a copy of the `ruthlesshelp/qa-cypress-eval` repo locally
+- Clone a copy of the `qa-cypress-eval` repo locally
 - Navigate to the `qa-cypress-eval` folder
 - Run `nvm use` command
 - Run `npm i` command
-- Run `npm run cypress` command
-
-### The First Scenario
-
-- Open the browser
-- Visit https://demoqa.com/autocomplete/
-- Find that page's entry title
-- Make sure the text is "Autocomplete"
+- Run `npm run cypress` command in CLI
+- Run `${npm bin} cypress open` to run tests in Dashboard
 
 ### Description of tests
 
