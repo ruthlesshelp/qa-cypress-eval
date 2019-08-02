@@ -23,3 +23,8 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("checkLinkIsVisible", (linkText) => { 
+    cy.get('#content').within((el) => 
+    cy.contains(`${linkText}`).should('be.visible'))    
+})

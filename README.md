@@ -1,69 +1,26 @@
+This project includes automated tests cretion for the website https://demoqa.com
+
 # QA Cypress Evaluation
-QA automated testing evaluation project using Cypress.io
+QA automated testing project using Cypress.io
 
 ### How do I use this repo?
 
-- Clone a copy of the `ruthlesshelp/qa-cypress-eval` repo locally
+- Clone a copy of the `qa-cypress-eval` repo locally
 - Navigate to the `qa-cypress-eval` folder
 - Run `nvm use` command
 - Run `npm i` command
-- Run `npm run cypress` command
+- Run `npm run cypress` command in CLI
+- Run `${npm bin} cypress open` to run tests in Dashboard
 
-### The First Scenario
+### Description of tests
 
-- Open the browser
-- Visit https://demoqa.com/autocomplete/
-- Find that page's entry title
-- Make sure the text is "Autocomplete"
+I have automated functional scenarios in order to achieve maximum test coverage for the application. The tests scenarios consists of verifying that the application components are present and visible in the application and the functionality of components is working as expected.
 
-# Basic Scenarios to Automate
-
-## Home Tab
-
-## Interactions Tab
-
-## Widgets Tab
-
-## Header and Footer
-
-# Interaction Scenarios to Automate
-
-## Sortable
-
-## Selectable
-
-## Resizable
-
-## Droppable
-
-## Draggable
-
-# Widget Scenarios to Automate
-
-## Tooltip
-
-## Tabs
-
-## Spinner
-
-## Slider
-
-## Selectmenu
-
-## Progressbar
-
-## Menu
-
-## Dialog
-
-## Datepicker
-
-## Controlgroup
-
-## Checkboxradio
-
-## Button
-
-## Autocomplete
-
-## Accordion
+# Features:
+- The tests are structured as per the area of the application to improve readability
+- Reusability of code is given much importance so that when there is a change in application, it can be incorporated in the test framework with change in minimum place
+- Descriptive names are variables/constants are used
+- Cypress custom commands are used. Please refer to /support/commands.js file for details.
+- Application URL is used from property defined in cypress.json file.
+- Efficient locator strategies are used to locate elements in application.
+- Various cypress commands and assertions are used for verification in tests.
