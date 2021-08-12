@@ -12,7 +12,7 @@ QA automated testing evaluation project using Cypress.io
 ### The First Scenario
 
 - Open the browser
-- Visit https://demoqa.com/auto-complete/
+- Visit https://demoqa.com/auto-complete
 - Find that page's entry title
 - Make sure the text is "Auto Complete"
 
